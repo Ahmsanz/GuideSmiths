@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -35,4 +36,67 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav {
+  background: rgb(11, 99, 77);
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 5px;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  background: cadetblue;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  background: cornflowerblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+.phone-catalogue {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 400px;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.phone-card{
+  display: flex;
+  width: 300px;
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: rgb(11, 99, 77, 0.4) 2px 5px;
+  margin: 10px;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.phone-card h4 {
+  color: rgb(11, 99, 77);
 }
