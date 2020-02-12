@@ -26,8 +26,11 @@ class Phones extends Component {
 
             <div className="phone-card" key={phone.id}>
               <div className = "card-content">
-                <h4> {phone.name} </h4>
-                <p> {phone.manufacturer} </p>
+                <img src={phone.img} alt="phone image" />
+                <div>
+                  <h4> {phone.name} </h4>
+                  <p> {phone.manufacturer} </p>
+                </div>
               </div>
             </div>
 

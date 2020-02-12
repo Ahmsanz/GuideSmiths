@@ -9,7 +9,8 @@
       "imageFileName": "IPhone_7.png",
       "screen": "4,7 inch IPS",
       "processor": "A10 Fusion",
-      "ram": 2
+      "ram": 2,
+      "img": "https://raw.githubusercontent.com/guidesmiths/interview-code-challenges/master/react/phone-catalogue/images/IPhone_7.png"
   },
   {
       "id": 1,
@@ -21,7 +22,8 @@
       "imageFileName": "Galaxy_S7.png",
       "screen": "5,1 inch Quad-HD",
       "processor": "Snapdragon 820",
-      "ram": 4
+      "ram": 4,
+      "img": "https://raw.githubusercontent.com/guidesmiths/interview-code-challenges/master/react/phone-catalogue/images/Galaxy_S7.png"
   },
   {
       "id": 2,
@@ -33,7 +35,8 @@
       "imageFileName": "Honor_10.png",
       "screen": "5,84 inch Full-HD",
       "processor": "Kirin 970",
-      "ram": 6
+      "ram": 6,
+      "img": "https://raw.githubusercontent.com/guidesmiths/interview-code-challenges/master/react/phone-catalogue/images/Honor_10.png"
   },
   {
       "id": 3,
@@ -45,7 +48,8 @@
       "imageFileName": "P10_Lite.jpg",
       "screen": "5,2 inch Full-HD",
       "processor": "Kirin 658",
-      "ram": 4
+      "ram": 4,
+      "img": "https://raw.githubusercontent.com/guidesmiths/interview-code-challenges/master/react/phone-catalogue/images/P10_Lite.jpg"
   },
   {
       "id": 4,
@@ -57,7 +61,8 @@
       "imageFileName": "Nokia_7.1.jpg",
       "screen": "5,84 inch Full-HD",
       "processor": "Octa-core",
-      "ram": 4
+      "ram": 4,
+      "img": "https://raw.githubusercontent.com/guidesmiths/interview-code-challenges/master/react/phone-catalogue/images/Nokia_7.1.jpg"
   },
   {
       "id": 5,
@@ -69,7 +74,8 @@
       "imageFileName": "ZenPhone_5.jpg",
       "screen": "6,2 inch Full-HD",
       "processor": "Snapdragon 636",
-      "ram": 6
+      "ram": 6,
+      "img": "https://raw.githubusercontent.com/guidesmiths/interview-code-challenges/master/react/phone-catalogue/images/ZenPhone_5.jpg"
   },
   {
       "id": 6,
@@ -81,7 +87,8 @@
       "imageFileName": "Xiaomi_MI_A2.jpeg",
       "screen": "5,99 inch Full-HD",
       "processor": "Snapdragon 660",
-      "ram": 6
+      "ram": 6,
+      "img": "https://raw.githubusercontent.com/guidesmiths/interview-code-challenges/master/react/phone-catalogue/images/Xiaomi_MI_A2.jpeg"
   },
   {
       "id": 7,
@@ -93,6 +100,7 @@
       "imageFileName": "Moto_G6.png",
       "screen": "5,7 inch Full-HD",
       "processor": "Snapdragon 450",
-      "ram": 3
+      "ram": 3,
+      "img": "https://raw.githubusercontent.com/guidesmiths/interview-code-challenges/master/react/phone-catalogue/images/Moto_G6.png"
   }
 ]
