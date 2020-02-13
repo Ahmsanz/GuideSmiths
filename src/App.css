@@ -43,6 +43,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: rgb(11, 99, 77, 0.05);
 }
 nav {
   background: rgb(11, 99, 77);
@@ -77,25 +78,24 @@ nav a:hover {
 }
 .phone-catalogue {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 80%;
-
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
 
 }
 
 .phone-card{
   display: flex;
   height: 300px;
-  width: 500px;
+  width: 450px;
   border-radius: 10px;
   box-shadow: rgb(11, 99, 77, 0.4) 2px 5px;
   margin: 10px;
   padding: 10px;
   flex-direction: row;
   justify-content: center;
-  background: rgb(11, 99, 77, 0.05);
+  background: white;
 }
 
 .phone-card h4 {
@@ -116,10 +116,24 @@ nav a:hover {
   padding: 10px;
 }
 
+.singlephone-card{
+  display: flex;
+  height: 800px;
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: rgb(11, 99, 77, 0.4) 2px 5px;
+  margin: 10px;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: center;
+  background: white;
+
+}
+
 @media only screen and (max-width: 900px) {
 
     .phone-catalogue {
-      height: 800pX;
+      flex-direction: column;
 
     }
 

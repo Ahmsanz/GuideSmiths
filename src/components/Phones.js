@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 import {getPhones} from '../store/actions/phonesActions.js';
 
 
@@ -27,16 +28,17 @@ class Phones extends Component {
     let phonesList = phones.length ? (
       phones.map( phone => {
         return (
-
-            <div className="phone-card" key={phone.id}>
-              <div className = "card-content">
-                <img src={phone.img} alt="phone image" />
-                <div>
-                  <h4> {phone.name} </h4>
-                  <p> {phone.manufacturer} </p>
+            <Link to={'/phones/' + phone.id}>
+              <div className="phone-card" key={phone.id}>
+                <div className = "card-content">
+                  <img src={phone.img} alt="phone image" />
+                  <div>
+                    <h4> {phone.name} </h4>
+                    <p> {phone.manufacturer} </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
 
         )
       })
