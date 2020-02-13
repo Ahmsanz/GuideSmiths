@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-// import {connect} from 'react-redux';
+import {connect} from 'react-redux';
 import axios from 'axios';
+import {getPhones} from '../store/actions/phonesActions.js';
 
 
 class Phones extends Component {
@@ -9,16 +10,19 @@ class Phones extends Component {
     phones: []
   }
 
+
   componentDidMount(){
-    axios.get('http://localhost:5000/phones')
-    .then(res => this.setState({phones: res.data}))
-    .catch(err => console.log('not getting those phones', err))
+    this.props.getPhones();
+  }
+
+  componentDidUpdate(){
+    console.log(this.props);
   }
 
   render() {
 
 
-    let {phones} = this.state;
+    let {phones} = this.props;
 
     let phonesList = phones.length ? (
       phones.map( phone => {
@@ -50,6 +54,25 @@ class Phones extends Component {
       </div>
     )
   }
-}
+};
 
-export default Phones;
+
+const mapStateToProps = (state) => {
+
+
+  return {
+    phones: state.phones
+  }
+};
+
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getPhones: () => {dispatch(getPhones())}
+
+  }
+};
+
+
+
+export default connect( mapStateToProps, mapDispatchToProps)(Phones)
