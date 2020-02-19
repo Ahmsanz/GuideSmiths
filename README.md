@@ -1,3 +1,14 @@
+This repository actually contains two different projects, one mainly with front-end and the other mainly with back-end functionalities.
+
+The fron-end project is a small web application created using React, while the back-end project uses basically NodeJS and ExpressJS.
+
+You can check the dependencies in the package.json file, and start with "npm i" for getting them in your unit.
+
+### Additional instructions for every project
+--------------------------------------------------
+
+FRONT-END PROJECT: phone catalogue using ReactJS.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +77,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+BACKEND PROJECT: MARTIAN ROBOTS
+
+Use "node mars.js" or "nodemon mars" in the "martianRobots" folder no initiate the app in a terminal. You will recieve the output requested in the instructions provided. 
