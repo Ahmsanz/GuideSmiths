@@ -1,20 +1,20 @@
-const Grid = ( length, height) => {
+const Grid = function( length, height) {
     let forbidden = [];
 
-    if (length > 50 || heigth > 50)
+    if (length > 50 || height > 50)
         throw new Error ('Grid size cannot be greater than 50x50');
     else if (length < 0 || height < 0)
         throw new Error ('Grid size cannot be smaller than 1x1');
 
-    
+
     this.length = (length === undefined ? 0 : length);
     this.height = (height === undefined ? 0 : height);
 
-    this.addForbidden = (position) => {
+    this.addForbidden = function(position) {
         forbidden.push(position);
     };
 
-    this.hasForbidden = (position) => {
+    this.hasForbidden = function(position) {
         return forbidden.indexOf(position) > -1;
     };
 };
