@@ -15,16 +15,25 @@ class SinglePhone extends Component {
     let {phone} = this.state;
 
     return(
-      <div className="singlephone-card" key={phone.id}>
-        <div className = "card-content">
-          <img src={phone.img} alt="phone image" />
-          <div>
-            <h4> {phone.name} </h4>
-            <p> {phone.manufacturer} </p>
-            <p>{phone.price}</p>
-            <p>{phone.color}</p>
-            <p>{phone.description}</p>
-          </div>
+      <div className="content">
+        <div className="singlephone-card" key={phone.id}>
+               
+            <div className="singlephone-content">
+              <div className="phone-header">
+                <img src={phone.img} alt="phone image" />
+                <div>
+                  <h4> {phone.name} </h4>
+                  <p> {phone.manufacturer}</p>
+                  <p>Price: {phone.price}€</p>
+                  <p>Color: {phone.color}</p>
+                </div>
+              </div>
+              <div className="phone-data">
+                <p>{phone.description}</p>
+              </div>
+            </div>
+          
+          
         </div>
       </div>
     )
